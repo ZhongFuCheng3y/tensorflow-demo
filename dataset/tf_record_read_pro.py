@@ -14,7 +14,7 @@ def _decode(example, type):
 
 def batch_inputs(files, batch_size, type, num_epochs=None, num_preprocess_threads=2):
     """Reads input data num_epochs times.
-    """
+    """""
     if not num_epochs: num_epochs = None
 
     with tf.name_scope('input'):
